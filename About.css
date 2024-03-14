@@ -1,0 +1,131 @@
+.NP{
+    height: 229px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.PersonalStatement{
+    background-color: #7BB377;
+    border-radius: 6px;
+    padding: 10px 10px 10px 20px;
+}
+
+.Skills{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 50px 20px;
+    margin-top: 40px;
+    background-color: #e4d9be;
+    border-radius: 8px;
+}
+
+.SkillsIMG{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+}
+
+.Logo{
+    height: 150px;
+}
+
+.half{
+    display: flex;
+    gap: 15px;
+}
+
+.vert{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {
+    .half { flex-direction: column;
+    align-items: center;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .Skills {width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    }
+    .vert {
+        width: 80%;
+        margin: auto;
+        }
+
+  }
+
+
+  @media screen and (max-width:800px) {
+    .Intrest {
+        width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .NP {font-size: 7vh;
+    }
+    #d{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .a {font-size: 7vh;}
+    #b {font-size: 8vh;}
+    #c { font-size: 8vh;}
+    .Esc {margin-top: 40px;}
+  }
+
+.Intrest{
+    height: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: #c497dc;
+}
+
+.Project{
+    padding: 20px;
+    width: 25vw;
+    height: 8vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 8vw;
+    margin-right: 20px;
+    font-size: 5vw;
+    background-color: #7BB377;
+    border-radius: 10px;
+}
+
+.Back{
+    border-radius: 100%;
+    height: 12vw;
+    line-height: 11vw;
+    width: 12vw;
+
+    font-size: 5vw;
+    background-color: #7BB377;
+    text-align: center;
+}
+
+.Esc{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
