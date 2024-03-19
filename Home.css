@@ -75,17 +75,22 @@ a{
     background-color: #7BB377;
 }
 
-.Ccont3:hover, .Ccont2:hover{
-    border: 5px #7BB377 inset;
-    background-color: #fff5dd42;
-    transition: 100ms;
-}
-
 .Ccont1{
     background-color: #fff5dd6b;
     color: #7BB377;
     font-size: 5.5vw;
 }
+
+@media screen and (max-width:600px) {
+    .Ccont1 { font-size: 6vh;}
+  }
+  @media screen and (max-width:600px) {
+    #BR1 { font-size: 6vh;}
+  }
+  @media screen and (max-width:600px) {
+    #BR2 { font-size: 6vh;}
+  }
+
 
 .BR1{
     font-size: 7vw;
@@ -134,7 +139,7 @@ a{
   .TimeLineLine{
     margin-left: 8px;
     width: 3px;
-    height: calc(100% + 20px);
+    height: 100%;
     background-color: #BB41FF;
   }
 

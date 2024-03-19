@@ -34,6 +34,10 @@
     height: 150px;
 }
 
+@media screen and (max-width: 800px) {
+    .Logo{ height: 100px;}
+}
+
 .half{
     display: flex;
     gap: 15px;
@@ -43,7 +47,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: space-between;
+    justify-content: baseline;
 }
 
 @media screen and (max-width:800px) {
@@ -58,7 +62,7 @@
     padding-left: 30px;
     }
     .vert {
-        width: 80%;
+        width: 100%;
         margin: auto;
         }
 
@@ -66,22 +70,32 @@
 
 
   @media screen and (max-width:800px) {
-    .Intrest {
-        width: 100%;
-    padding: 10px;
-    padding-left: 30px;
+    #Skill {
+    margin: 0px;
+    margin-top: 30px;
+    padding: 15px 60px;
+    margin-bottom: -30px;
+    
     }
   }
 
-  @media screen and (max-width:800px) {
-    .NP {font-size: 7vh;
-    }
+  @media screen and (max-width:1100px) {
     #d{
-        width: 50%;
+        width: 100%;
         margin: auto;
         text-align: center;
+        justify-content: center;
     }
   }
+
+  @media screen and (max-width:1000px) {
+    .NP {font-size: 7vh;
+        width: 100%;
+    }
+    .d{width: 100%;
+    margin: auto;}
+  }
+
 
   @media screen and (max-width:800px) {
     .a {font-size: 7vh;}
@@ -101,25 +115,20 @@
 }
 
 .Project{
-    padding: 20px;
-    width: 25vw;
-    height: 8vw;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 8vw;
+    padding: 20px 40px;
+    height: 5vw;
+    text-align: center;
     margin-right: 20px;
-    font-size: 5vw;
+    font-size: 4vw;
     background-color: #7BB377;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .Back{
-    border-radius: 100%;
-    height: 12vw;
-    line-height: 11vw;
-    width: 12vw;
-
-    font-size: 5vw;
+    border-radius: 5px;
+    padding: 20px 40px;
+    height: 5vw;
+    font-size: 4vw;
     background-color: #7BB377;
     text-align: center;
 }
@@ -128,4 +137,28 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+}
+
+.Links{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding: 10px 50px;
+    font-size: 2vw;
+    background-color: #9897dc;
+    border-radius: 10px;
+}
+
+.LinksFlex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Lin{
+    color: #106a28;
+}
+
+@media screen and (max-width:800px) {
+    .Links {font-size: 3vh;}
 }
