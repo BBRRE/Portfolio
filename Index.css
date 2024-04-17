@@ -13,7 +13,7 @@
   
   /* Font size variables */
   .title {
-      margin-left: 10px;
+    margin-left: 10px;
     letter-spacing: 10px;
     --min: 3em; /* minimum value */
     --val: 5vw; /* preferred value = 5% viewport width */
@@ -191,8 +191,11 @@ a::selection{
     background-color: #3a5239;
 }
 
-.contac{
+.contact{
     margin-left: 20px;
+}
+#title{
+    margin-left: 10px;
 }
 
 /* ===== Scrollbar CSS ===== */
