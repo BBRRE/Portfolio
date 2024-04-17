@@ -13,6 +13,7 @@
   
   /* Font size variables */
   .title {
+      margin-left: 10px;
     letter-spacing: 10px;
     --min: 3em; /* minimum value */
     --val: 5vw; /* preferred value = 5% viewport width */
@@ -188,6 +189,10 @@ a::selection{
 
 .contact > h2 > a:hover{
     background-color: #3a5239;
+}
+
+.contac{
+    margin-left: 20px;
 }
 
 /* ===== Scrollbar CSS ===== */
