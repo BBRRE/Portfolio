@@ -133,7 +133,7 @@ a::selection{
     height: 120%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .project{
