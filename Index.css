@@ -1,0 +1,212 @@
+/* Declare text styles */
+.title, .subTitle, .paragraph, .Sparagraph {
+    /* Font minimum, preferred and maximum value */
+    font-size: clamp(var(--min), var(--val), var(--max));
+    font-weight: lighter;
+    margin: 10
+    px;
+  }
+  .title::selection, .subTitle::selection, .paragraph::selection, .Sparagraph::selection {
+    color: white;
+    background-color: #3a5239;
+  }
+  
+  /* Font size variables */
+  .title {
+    letter-spacing: 10px;
+    --min: 3em; /* minimum value */
+    --val: 5vw; /* preferred value = 5% viewport width */
+    --max: 3em; /* maximum value */
+  }
+  .subTitle {
+    margin-left: 1.1em;
+    width:fit-content ;
+    --min: 1.5em;   /* minimum value */
+    --val: 4vw;     /* preferred value = 4% viewport width */
+    --max: 2.25em;  /* maximum value */
+  }
+  .paragraph {
+    --min: 1em;   /* minimum value */
+    --val: 2vw; /* preferred value = 2.5% viewport width */
+    --max: 1.5em; /* maximum value */
+  }
+  .Sparagraph{
+    margin-top: 10px;
+    --min: 1.2em;   /* minimum value */
+    --val: 1vw; /* preferred value = 2.5% viewport width */
+    --max: 1.5em; /* maximum value */
+  }
+
+  html{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body{
+    background-image: url('./Assets/NOoISE.png');
+    font-family: 'IBM Plex Mono, Roboto Mono' ;
+    color: azure;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    body {
+      flex-direction: column;
+    }
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40em;
+    height: 100vh;
+    margin-top: auto;
+}
+
+.right{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    height: 60%;
+    width: 100%;
+    margin-right: 30px;
+}
+
+br::selection{
+    color: white;
+    background-color: #3a5239;
+}
+
+a{
+    color: aliceblue;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a::selection{
+    color: white;
+    background-color: #3a5239;
+}
+
+.about{
+    margin-top: 80px;
+    line-height: 1.5;
+}
+
+.projects{
+    line-height: 1.5;
+    display: none;
+}
+
+.about::selection{
+    color: white;
+    background-color: #3a5239;
+}
+
+.aboutTitle:hover, .projectsTitle:hover {
+    cursor: pointer;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin-top: 50px;
+}
+
+.project{
+    display: flex;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+.images{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-auto-rows: 185px;
+    gap: 10px;
+}
+.images3{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(1,200px);
+    grid-auto-rows: 185px;
+    gap: 10px;
+}
+
+.text{
+    width: 40%;
+    margin-left: 30px;
+}
+
+.prIMG{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.images2{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-auto-rows: 120px;
+    gap: 10px;
+}
+
+.prIMG2{
+    width: 205px;
+    height: auto;
+    object-fit: contain;
+}
+
+.mon{
+    margin-top: -30px;
+}
+
+.contact > h2 > a:hover{
+    background-color: #3a5239;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #bb41ff #3a5239;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #3a5239;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #bb41ff;
+    border-radius: 10px;
+    border: 2px outset #000000;
+  }
