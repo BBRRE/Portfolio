@@ -52,27 +52,7 @@
     padding: 0px;
   }
 
-  @media screen and (max-width: 1050px) {
-    body {
-      flex-direction: column;
-    }
-    #left{
-      margin-left: auto;
-      margin-right: auto;
-      align-items: center;
-      height: 50vh;
-    }
-    #right{
-      height: 50vh;
-      margin: auto;
-    }
-    #why{
-      margin-left: 30px;
-    }
-    #title{
-      padding-left: 30px;
-    }
-  }
+
 
   canvas {
     position: absolute;
@@ -239,3 +219,65 @@ a::selection{
     border: 2px outset #000000;
   }
 
+
+
+  @media screen and (max-width: 1050px) {
+    body {
+      flex-direction: column;
+    }
+    #left{
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      height: 50vh;
+      width: 100%;
+    }
+    #right{
+      height: 50vh;
+      width: 100%;
+      margin: auto;
+    }
+    #why{
+      margin-left: 30px;
+    }
+    #title{
+      padding-left: 30px;
+    }
+    #why{
+      width: 100%;
+      margin: auto;
+    }
+     .prIMG,.prIMG2{
+      width: 100px;
+    }
+    .images{
+      grid-template-columns: repeat(2,100px);
+      gap: 5px;
+      grid-auto-rows: 90px ;
+    }
+    .images2{
+      grid-template-columns: repeat(2,100px);
+      gap: 5px;
+      grid-auto-rows: 100px ;
+    }
+    .images3{
+      grid-template-columns: repeat(1,100px);
+      margin-left: 50px;
+      gap: 5px;
+      grid-auto-rows: 100px ;
+    }
+    .content{
+      height: 100%;
+    }
+    .text{
+      margin-left: 10px;
+    }
+    .project{
+      margin: auto;
+      height: 100%;
+      margin-bottom: 100px;
+    }
+    .projects{
+      height: 100%;
+    }
+  }
