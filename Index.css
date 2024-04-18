@@ -148,10 +148,10 @@ a::selection{
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 120%;
+    height: 60%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    margin-top: 10px;
+    margin-top: 10%;
 }
 
 .project{
