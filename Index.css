@@ -238,3 +238,7 @@ a::selection{
     border-radius: 10px;
     border: 2px outset #000000;
   }
+
+div#why {
+    margin-top: 25%;
+}
