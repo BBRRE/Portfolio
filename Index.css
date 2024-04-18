@@ -52,9 +52,25 @@
     padding: 0px;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     body {
       flex-direction: column;
+    }
+    #left{
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      height: 50vh;
+    }
+    #right{
+      height: 50vh;
+      margin: auto;
+    }
+    #why{
+      margin-left: 30px;
+    }
+    #title{
+      padding-left: 30px;
     }
   }
 
