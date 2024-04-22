@@ -21,6 +21,7 @@
   }
   .subTitle {
     margin-left: 1.1em;
+    text-decoration: underline;
     width:fit-content ;
     --min: 1.5em;   /* minimum value */
     --val: 4vw;     /* preferred value = 4% viewport width */
