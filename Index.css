@@ -129,17 +129,22 @@ a::selection{
     display: flex;
     flex-direction: column;
     width: auto;
+<<<<<<< Updated upstream
     height: 500px;
+=======
+    height: 80vh;
+>>>>>>> Stashed changes
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    margin-top: 10%;
+    margin: 0 auto;
 }
 
 .project{
     display: flex;
     height: 100%;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     margin-left: auto;
+    margin: auto;
     width: auto;
 }
 
